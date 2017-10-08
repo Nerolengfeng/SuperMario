@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:oxm="http://www.springframework.org/schema/oxm"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd 
+http://www.springframework.org/schema/oxm 
+http://www.springframework.org/schema/oxm/spring-oxm.xsd">
+<bean id="null" class="com.luck.tool.Null" />
+<bean id="wall1" class="com.luck.model.Wall">
+<constructor-arg index="0" value="550"/>
+<constructor-arg index="1" value="610"/>
+<constructor-arg index="2" value="true"/>
+<constructor-arg index="3" ref="null"/>
+</bean>
+<bean id="wall2" class="com.luck.model.Wall">
+<constructor-arg index="0" value="590"/>
+<constructor-arg index="1" value="560"/>
+<constructor-arg index="2" value="true"/>
+<constructor-arg index="3" ref="null"/>
+</bean>
+<bean id="wall3" class="com.luck.model.Wall">
+<constructor-arg index="0" value="640"/>
+<constructor-arg index="1" value="510"/>
+<constructor-arg index="2" value="true"/>
+<constructor-arg index="3" ref="null"/>
+</bean>
+<bean id="turtle1" class="com.luck.model.Turtle">
+<constructor-arg index="0" value="650"/>
+<constructor-arg index="1" value="460"/>
+<constructor-arg index="2" value="-1"/>
+</bean>
+<bean id="turtle2" class="com.luck.model.Turtle">
+<constructor-arg index="0" value="800"/>
+<constructor-arg index="1" value="120"/>
+<constructor-arg index="2" value="-1"/>
+</bean>
+<bean id="turtle3" class="com.luck.model.Turtle">
+<constructor-arg index="0" value="690"/>
+<constructor-arg index="1" value="170"/>
+<constructor-arg index="2" value="1"/>
+</bean>
+<bean id="pipe1" class="com.luck.model.Pipe">
+<constructor-arg index="0" value="930"/>
+<constructor-arg index="1" value="true"/>
+</bean>
+<bean id="badflower1" class="com.luck.model.BadFlower">
+<constructor-arg index="0" value="930"/>
+<constructor-arg index="1" value="508"/>
+<constructor-arg index="2" ref="pipe1"/>
+</bean>
+<bean id="pipe2" class="com.luck.model.Pipe">
+<constructor-arg index="0" value="1240"/>
+<constructor-arg index="1" value="false"/>
+</bean>
+</beans>
